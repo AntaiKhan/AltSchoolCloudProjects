@@ -1,6 +1,6 @@
 # AltSchool Second Semester Project Submission
 
-## URL: 
+## URL: webantai.tech
 ## Public IP: 34.213.62.106
 ## Screenshot of URL 
 
@@ -76,7 +76,23 @@ Now that your index.html file is created, you can view this via the public IP as
 <img width="1059" alt="image" src="https://github.com/user-attachments/assets/c937009c-9efc-4443-92a6-1a3555f5f024" />
 
 
+## STEP 4 - CONFIGURING SSL USING LET'S ENCRYPT
 
+First,we install certbot using the script below:
 
+`installed certbot`
 
+Then, we obtain and deploy the certificate to our server using:
+
+`sudo certbot --nginx`
+
+Note: A prompt would come up requesting the domain name of your website to deploy the certificate to.
+
+<img width="565" alt="image" src="https://github.com/user-attachments/assets/b5e7f192-c1c5-48f6-9366-d875458bfe4e" />
+
+After deploying certificate is successfully deployed, go to your security group and update your inbound rule to allow access from port 443 (HTTPS).
+
+Your site should come up successfully after that as seen below.
+
+<img width="1048" alt="image" src="https://github.com/user-attachments/assets/fd3ed5d1-8777-4002-8dae-6acaaa1d338f" />
 
